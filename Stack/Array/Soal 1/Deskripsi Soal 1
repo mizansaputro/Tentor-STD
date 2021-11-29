@@ -1,7 +1,7 @@
 1. Buatlah ADT Stack menggunakan ARRAY sebagai berikut:
 
 Type Stack <
-  info : array [5] of integer
+  info : array [20] of integer
   top : integer
 >
 
