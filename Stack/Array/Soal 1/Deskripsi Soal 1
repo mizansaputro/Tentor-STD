@@ -1,0 +1,40 @@
+1. Buatlah ADT Stack menggunakan ARRAY sebagai berikut:
+
+Type Stack <
+  info : array [5] of integer
+  top : integer
+>
+
+prosedur createStack( in/out S : Stack )
+prosedur Push( in/out S : Stack, in x : infotype)
+fungsi Pop( in/out S : Stack ) : infotype
+prosedur printInfo( in S : Stack )
+prosedur balikStack( in/out S : Stack )
+
+Buatlah implementasi ADT Stack menggunakan Array pada file “Soal_1.cpp” dan “main.cpp”
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    Stack S;
+    createStack(S);
+    Push(S,3);
+    Push(S,4);
+    Push(S,8);
+    Pop(S);
+    Push(S,2);
+    Push(S,3);
+    Pop(S);
+    Push(S,9);
+    printInfo(S);
+    cout<<"balik stack"<<endl;
+    balikStack(S);
+    printInfo(S);
+    return 0;
+}
+
+Output:
+Hello world!
+[TOP] 9 2 4 3
+balik stack
+[TOP] 3 4 2 9
